@@ -24,8 +24,13 @@ const LoginContainer = styled.div`
   -webkit-box-shadow: 5px 5px 8px 1px #000000;
   box-shadow: 5px 5px 8px 1px #000000;
 
-  h1 {
-    margin-top: 5rem;
+  figure {
+    margin-top: 2rem;
+
+    img {
+      height: 5rem;
+      width: 7rem;
+    }
   }
 
   h2 {

@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import { LoginContainer, Main } from './style';
+import logo from '../../assets/logo.png'
 
 function LoginPage() {
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <Main>
       <LoginContainer>
-        <h1>VFLOWS</h1>
+        <figure>
+          <img src={logo} alt="" />
+        </figure>
         <h2>PAGAMENTO DE FORNECEDOR</h2>
         <div id='form-container'>
           <form action="" id='login-form'>
