@@ -7,11 +7,19 @@ const DataContainer = styled.div`
   margin-left: 2rem;
   margin-top: 2rem;
 
-  height: 5rem;
+  height: 6rem;
   width: 93vw;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div {
+    margin-left: 1rem;
+  }
+
   span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   #cnpj {
@@ -20,6 +28,7 @@ const DataContainer = styled.div`
 
   #fantasy-name {
     margin-top: 1rem;
+    margin-left: 1rem;
   }
 `;
 
