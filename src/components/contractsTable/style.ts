@@ -56,11 +56,19 @@ const Table = styled.table`
     }
 
     .technical-retention {
-      margin-left: 26.5rem
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 22.1rem;
+      width: 9.5rem;
+      height: 2rem;
+      background-color: #2C70B9;
+      color: #FFFFFF;
     }
 
     .details {
-      margin-left: 23.8rem
+      margin-left: 20.1rem
     }
   }
 

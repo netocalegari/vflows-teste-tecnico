@@ -4,6 +4,7 @@ import { UserData } from "../../components/userData/userData";
 import { ContentTitle } from "../../components/contentTitle/contentTitle";
 import { ContractsTable } from "../../components/contractsTable/contractsTable";
 import { PaginationButtons } from "../../components/paginationButtons/paginationButtons";
+import { Footer } from "../../components/footer/footer";
 
 function ContractsPage() {
   return (
@@ -14,6 +15,7 @@ function ContractsPage() {
         <ContentTitle/>
         <ContractsTable/>
         <PaginationButtons/>
+        <Footer/>
 
       </BackGroundDiv>
     </>
