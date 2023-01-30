@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const ButtonContainer = styled.div`
     border-style: none;
     border-radius: 3px;
 
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 2rem;
     font-weight: bold;
   }
@@ -21,13 +21,12 @@ const ButtonContainer = styled.div`
   #previous-button {
     margin-right: 1rem;
 
-    background-color: #FEBF00;
+    background-color: #febf00;
   }
 
   #next-button {
-    background-color: #008B47;
+    background-color: #008b47;
   }
-
 `;
 
-export { ButtonContainer }
+export { ButtonContainer };

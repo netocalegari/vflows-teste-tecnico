@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const BackGroundDiv = styled.div`
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   margin-top: 2rem;
   margin-left: 2rem;
@@ -10,4 +10,4 @@ const BackGroundDiv = styled.div`
   width: 97vw;
 `;
 
-export {BackGroundDiv};
+export { BackGroundDiv };

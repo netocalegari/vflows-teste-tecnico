@@ -1,15 +1,13 @@
-import { ToastContainer } from 'react-toastify';
-import "react-toastify/dist/ReactToastify.css";
+import { AuthProvider } from './contexts/authContext';
 import { MainRoutes } from './routes/routes';
 import Global from './styles/global';
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <Global />
-      <MainRoutes />;
-      <ToastContainer/>
-    </>
+      <MainRoutes />
+    </AuthProvider>
   );
 }
 

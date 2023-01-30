@@ -1,12 +1,21 @@
-import { ButtonContainer } from "./style"
+import { ButtonContainer } from './style';
 
-function PaginationButtons() {
-  return (
-    <ButtonContainer>
-      <button id="previous-button">Anterior</button>
-      <button id="next-button">Próximo</button>
-    </ButtonContainer>
-  )
+interface PaginationButtonProps {
+  previous: () => void;
+  next: () => void;
 }
 
-export { PaginationButtons }
+function PaginationButtons({ previous, next }: PaginationButtonProps) {
+  return (
+    <ButtonContainer>
+      <button type="button" onClick={previous} id="previous-button">
+        Anterior
+      </button>
+      <button type="button" onClick={next} id="next-button">
+        Próximo
+      </button>
+    </ButtonContainer>
+  );
+}
+
+export { PaginationButtons };

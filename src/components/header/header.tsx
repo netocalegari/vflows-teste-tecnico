@@ -1,7 +1,11 @@
-import logo from '../../assets/logo.png'
-import { HeaderContainer } from './style'
+import { useContext } from 'react';
+import logo from '../../assets/logo.png';
+import { AuthContext } from '../../contexts/authContext';
+import { HeaderContainer } from './style';
 
 function Header() {
+  const { user } = useContext(AuthContext);
+
   return (
     <HeaderContainer>
       <figure>
@@ -10,7 +14,7 @@ function Header() {
 
       <h1>PAGAMENTO DE FORNECEDOR</h1>
     </HeaderContainer>
-  )
+  );
 }
 
-export {Header}
+export { Header };
