@@ -1,17 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Table = styled.table`
   border-radius: 3px;
 
   width: 93vw;
-  height: 23rem;
+  /* height: 23rem; */
   max-height: 23rem;
 
   margin-left: 2rem;
   margin-top: 0.7rem;
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+
+  table-layout: fixed;
+
+  th,
+  td {
+    text-align: left;
+  }
 
   #table-header-container {
     background-color: #959595;
@@ -20,13 +27,13 @@ const Table = styled.table`
 
     border-radius: 3px;
 
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
 
     th {
       font-size: 1.2rem;
-      color: #FFFFFF;
+      color: #ffffff;
     }
   }
 
@@ -34,25 +41,25 @@ const Table = styled.table`
     margin-top: 0.5rem;
     height: 2rem;
 
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 
-    background-color: #B4B4B4;
+    background-color: #b4b4b4;
 
     .checkbox-input {
-      margin-left: 1rem;
+      /* margin-left: 1rem; */
 
-      input[type=checkbox] {
+      input[type='checkbox'] {
         transform: scale(2);
       }
     }
 
     .contract-title {
-      margin-left: 7.3rem
+      /* margin-left: 7.3rem; */
     }
 
     .contract-code {
-      margin-left: 13.6rem
+      /* margin-left: 13.6rem; */
     }
 
     .technical-retention {
@@ -60,21 +67,21 @@ const Table = styled.table`
       justify-content: center;
       align-items: center;
 
-      margin-left: 22.1rem;
+      /* margin-left: 22.1rem; */
       width: 9.5rem;
       height: 2rem;
-      background-color: #2C70B9;
-      color: #FFFFFF;
+      background-color: #2c70b9;
+      color: #ffffff;
     }
 
     .details {
-      margin-left: 20.1rem
+      /* margin-left: 20.1rem; */
     }
   }
 
   tr:nth-child(even) {
-    background-color: #DDDDDD;
+    background-color: #dddddd;
   }
 `;
 
-export { Table }
+export { Table };

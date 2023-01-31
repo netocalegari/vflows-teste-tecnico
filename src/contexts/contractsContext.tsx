@@ -1,7 +1,19 @@
-import { createContext, ReactNode, useMemo, useState } from 'react';
+import {
+  createContext,
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  useMemo,
+  useState,
+} from 'react';
 import { Contract } from '../models/Contract';
 
-const ContractContext = createContext({} as AuthContextProps);
+interface ContractContextProps {
+  contract: Contract;
+  setContract: Dispatch<SetStateAction<Contract>>;
+}
+
+const ContractContext = createContext({} as ContractContextProps);
 
 interface ContractProps {
   children: ReactNode;

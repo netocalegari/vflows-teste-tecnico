@@ -23,6 +23,12 @@ const contracts: Contract[] = [
     retention: '10%',
     cnpj: '84955392000132',
   },
+  {
+    name: 'contrato3',
+    code: '11002200-03',
+    retention: '15%',
+    cnpj: '84955392000132',
+  },
 ];
 
 export { users, contracts };
